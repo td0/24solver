@@ -1,215 +1,185 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>24 Games Solution</title>
-
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-
+		<title>24 Game Solution</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> -->
 		<link rel="stylesheet" type="text/css" href="theme/jquery.mobile.flatui.min.css" />
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<style>
-			#solution {
+			/*#solution {
 				font-size: 0.9em
-			}
+			}*/
 			.ui-field-contain .ui-controlgroup,
 			.ui-field-contain fieldset.ui-controlgroup {
-			    text-align: center;
+			text-align: center;
 			}
-
 			.ui-field-contain .ui-controlgroup-controls {
-			    width: auto;
+			width: auto;
 			}
 		</style>
-
 	</head>
 	<body>
 		<div id="content" data-role="page" >
 			
-			<div align="center">
-				<span id="solution">press the button to get the solution(s)</span>
+			<div data-role="header" data-position="fixed">
+				<h4 id="solution">Solution Goes Here!</h4>
+			</div>
+			<!-- 			<div align="center">
+					<span id="solution">press the button to get the solution(s)</span>
 			</div><hr>
-			
+			-->
 			<div role="main" align="center">
 				
-				<fieldset data-role="controlgroup"  data-type="horizontal" data-mini="true">
-			    <table>
-					<tr><td>
-						<legend>Number set 1:</legend>
-					    <input type="radio" name="num_0" id="num_0_1" value="1" checked="checked">
-					    <label for="num_0_1">1</label>
-						<input type="radio" name="num_0" id="num_0_2" value="2">
-					    <label for="num_0_2">2</label>
-						<input type="radio" name="num_0" id="num_0_3" value="3">
-					    <label for="num_0_3">3</label>
-						<input type="radio" name="num_0" id="num_0_4" value="4">
-					    <label for="num_0_4">4</label>
-						<input type="radio" name="num_0" id="num_0_5" value="5">
-					    <label for="num_0_5">5</label>	
-					</td><tr></tr><td>
-						<input type="radio" name="num_0" id="num_0_6" value="6">
-					    <label for="num_0_6">6</label>
-						<input type="radio" name="num_0" id="num_0_7" value="7">
-					    <label for="num_0_7">7</label>
-						<input type="radio" name="num_0" id="num_0_8" value="8">
-					    <label for="num_0_8">8</label>
-						<input type="radio" name="num_0" id="num_0_9" value="9">
-					    <label for="num_0_9">9</label>
-						<input type="radio" name="num_0" id="num_0_10" value="10">
-					    <label for="num_0_10">10</label>
-					</td></tr>
-				</table>
+				<fieldset data-role="controlgroup" class="ui-grid-d" data-type="horizontal" data-mini="true">
+					<legend>Number set 1:</legend>
+					<input class="ui-block-a" type="radio" name="num_0" id="num_0_1" value="1" checked="checked">
+					<label for="num_0_1">1</label>
+					<input class="ui-block-b" type="radio" name="num_0" id="num_0_2" value="2">
+					<label for="num_0_2">2</label>
+					<input class="ui-block-c" type="radio" name="num_0" id="num_0_3" value="3">
+					<label for="num_0_3">3</label>
+					<input class="ui-block-d" type="radio" name="num_0" id="num_0_4" value="4">
+					<label for="num_0_4">4</label>
+					<input class="ui-block-e" type="radio" name="num_0" id="num_0_5" value="5">
+					<label for="num_0_5">5</label>
+					
+					<input class="ui-block-a" type="radio" name="num_0" id="num_0_6" value="6">
+					<label for="num_0_6">6</label>
+					<input class="ui-block-b" type="radio" name="num_0" id="num_0_7" value="7">
+					<label for="num_0_7">7</label>
+					<input class="ui-block-c" type="radio" name="num_0" id="num_0_8" value="8">
+					<label for="num_0_8">8</label>
+					<input class="ui-block-d" type="radio" name="num_0" id="num_0_9" value="9">
+					<label for="num_0_9">9</label>
+					<input class="ui-block-e" type="radio" name="num_0" id="num_0_10" value="10">
+					<label for="num_0_10">10</label>
 				</fieldset>
 
 				<fieldset data-role="controlgroup"  data-type="horizontal" data-mini="true">
-			    <table>
-					<tr><td>
-						<legend>Number set 2:</legend>
-					    <input type="radio" name="num_1" id="num_1_1" value="1" checked="checked">
-					    <label for="num_1_1">1</label>
-						<input type="radio" name="num_1" id="num_1_2" value="2">
-					    <label for="num_1_2">2</label>
-						<input type="radio" name="num_1" id="num_1_3" value="3">
-					    <label for="num_1_3">3</label>
-						<input type="radio" name="num_1" id="num_1_4" value="4">
-					    <label for="num_1_4">4</label>
-						<input type="radio" name="num_1" id="num_1_5" value="5">
-					    <label for="num_1_5">5</label>	
-					</td><tr></tr><td>
+					<table>
+						<tr><td align="center">
+							<legend>Number set 2:</legend>
+							<input type="radio" name="num_1" id="num_1_1" value="1" checked="checked">
+							<label for="num_1_1">1</label>
+							<input type="radio" name="num_1" id="num_1_2" value="2">
+							<label for="num_1_2">2</label>
+							<input type="radio" name="num_1" id="num_1_3" value="3">
+							<label for="num_1_3">3</label>
+							<input type="radio" name="num_1" id="num_1_4" value="4">
+							<label for="num_1_4">4</label>
+							<input type="radio" name="num_1" id="num_1_5" value="5">
+							<label for="num_1_5">5</label>
+						</td><tr></tr><td align="center">
 						<input type="radio" name="num_1" id="num_1_6" value="6">
-					    <label for="num_1_6">6</label>
+						<label for="num_1_6">6</label>
 						<input type="radio" name="num_1" id="num_1_7" value="7">
-					    <label for="num_1_7">7</label>
+						<label for="num_1_7">7</label>
 						<input type="radio" name="num_1" id="num_1_8" value="8">
-					    <label for="num_1_8">8</label>
+						<label for="num_1_8">8</label>
 						<input type="radio" name="num_1" id="num_1_9" value="9">
-					    <label for="num_1_9">9</label>
+						<label for="num_1_9">9</label>
 						<input type="radio" name="num_1" id="num_1_10" value="10">
-					    <label for="num_1_10">10</label>
+						<label for="num_1_10">10</label>
 					</td></tr>
 				</table>
-				</fieldset>
+			</fieldset>
 
-				<fieldset data-role="controlgroup"  data-type="horizontal" data-mini="true">
-			    <table>
-					<tr><td>
+			<fieldset data-role="controlgroup"  data-type="horizontal" data-mini="true">
+				<table>
+					<tr><td align="center">
 						<legend>Number set 3:</legend>
-					    <input type="radio" name="num_2" id="num_2_1" value="1" checked="checked">
-					    <label for="num_2_1">1</label>
+						<input type="radio" name="num_2" id="num_2_1" value="1" checked="checked">
+						<label for="num_2_1">1</label>
 						<input type="radio" name="num_2" id="num_2_2" value="2">
-					    <label for="num_2_2">2</label>
+						<label for="num_2_2">2</label>
 						<input type="radio" name="num_2" id="num_2_3" value="3">
-					    <label for="num_2_3">3</label>
+						<label for="num_2_3">3</label>
 						<input type="radio" name="num_2" id="num_2_4" value="4">
-					    <label for="num_2_4">4</label>
+						<label for="num_2_4">4</label>
 						<input type="radio" name="num_2" id="num_2_5" value="5">
-					    <label for="num_2_5">5</label>	
-					</td><tr></tr><td>
+						<label for="num_2_5">5</label>
+						</td><tr></tr><td align="center">
 						<input type="radio" name="num_2" id="num_2_6" value="6">
-					    <label for="num_2_6">6</label>
+						<label for="num_2_6">6</label>
 						<input type="radio" name="num_2" id="num_2_7" value="7">
-					    <label for="num_2_7">7</label>
+						<label for="num_2_7">7</label>
 						<input type="radio" name="num_2" id="num_2_8" value="8">
-					    <label for="num_2_8">8</label>
+						<label for="num_2_8">8</label>
 						<input type="radio" name="num_2" id="num_2_9" value="9">
-					    <label for="num_2_9">9</label>
+						<label for="num_2_9">9</label>
 						<input type="radio" name="num_2" id="num_2_10" value="10">
-					    <label for="num_2_10">10</label>
+						<label for="num_2_10">10</label>
 					</td></tr>
 				</table>
-				</fieldset>
-
-				<fieldset data-role="controlgroup"  data-type="horizontal" data-mini="true">
-			    <table>
-					<tr><td>
-						<legend>Number set 4:</legend>
-					    <input type="radio" name="num_3" id="num_3_1" value="1" checked="checked">
-					    <label for="num_3_1">1</label>
-						<input type="radio" name="num_3" id="num_3_2" value="2">
-					    <label for="num_3_2">2</label>
-						<input type="radio" name="num_3" id="num_3_3" value="3">
-					    <label for="num_3_3">3</label>
-						<input type="radio" name="num_3" id="num_3_4" value="4">
-					    <label for="num_3_4">4</label>
-						<input type="radio" name="num_3" id="num_3_5" value="5">
-					    <label for="num_3_5">5</label>	
-					</td><tr></tr><td>
-						<input type="radio" name="num_3" id="num_3_6" value="6">
-					    <label for="num_3_6">6</label>
-						<input type="radio" name="num_3" id="num_3_7" value="7">
-					    <label for="num_3_7">7</label>
-						<input type="radio" name="num_3" id="num_3_8" value="8">
-					    <label for="num_3_8">8</label>
-						<input type="radio" name="num_3" id="num_3_9" value="9">
-					    <label for="num_3_9">9</label>
-						<input type="radio" name="num_3" id="num_3_10" value="10">
-					    <label for="num_3_10">10</label>
-					</td></tr>
-				</table>
-				</fieldset>
-
-
-			</div>
-			
-
-			<!-- <div id="num_group1">
-				num set 1 :
-				<input type="button" value=1 id="num_0" class="active" >
-				<input type="button" value=2 id="num_0" > 
-				<input type="button" value=3 id="num_0" > 
-				<input type="button" value=4 id="num_0" > 
-				<input type="button" value=5 id="num_0" > 
-				<input type="button" value=6 id="num_0" > 
-				<input type="button" value=7 id="num_0" > 
-				<input type="button" value=8 id="num_0" > 
-				<input type="button" value=9 id="num_0" > 
-				<input type="button" value=10 id="num_0" > 
-			</div><br>
-			<div id="num_group2">
-				num set 2 :
-				<input type="button" value=1 id="num_1" class="active"> 
-				<input type="button" value=2 id="num_1" > 
-				<input type="button" value=3 id="num_1" > 
-				<input type="button" value=4 id="num_1" > 
-				<input type="button" value=5 id="num_1" > 
-				<input type="button" value=6 id="num_1" > 
-				<input type="button" value=7 id="num_1" > 
-				<input type="button" value=8 id="num_1" > 
-				<input type="button" value=9 id="num_1" > 
-				<input type="button" value=10 id="num_1" > 
-			</div><br>
-			<div id="num_group3">
-				num set 3 :
-				<input type="button" value=1 id="num_2" class="active"> 
-				<input type="button" value=2 id="num_2" > 
-				<input type="button" value=3 id="num_2" > 
-				<input type="button" value=4 id="num_2" > 
-				<input type="button" value=5 id="num_2" > 
-				<input type="button" value=6 id="num_2" > 
-				<input type="button" value=7 id="num_2" > 
-				<input type="button" value=8 id="num_2" > 
-				<input type="button" value=9 id="num_2" > 
-				<input type="button" value=10 id="num_2" > 
-			</div><br>
-			<div id="num_group4">
-				num set 4 :
-				<input type="button" value=1 id="num_3" class="active"> 
-				<input type="button" value=2 id="num_3" > 
-				<input type="button" value=3 id="num_3" > 
-				<input type="button" value=4 id="num_3" > 
-				<input type="button" value=5 id="num_3" > 
-				<input type="button" value=6 id="num_3" > 
-				<input type="button" value=7 id="num_3" > 
-				<input type="button" value=8 id="num_3" > 
-				<input type="button" value=9 id="num_3" > 
-				<input type="button" value=10 id="num_3" > 
-			</div><hr> -->
-			
-		</div>
-
-		<script type="text/javascript" src="str.js"></script>
-		<script type="text/javascript" src="fsolution.js"></script>
-
-	</body>
+			</fieldset>
+		
+		<fieldset data-role="controlgroup"  data-type="horizontal" data-mini="true">
+			<table>
+				<tr><td align="center">
+					<legend>Number set 4:</legend>
+					<input type="radio" name="num_3" id="num_3_1" value="1" checked="checked">
+					<label for="num_3_1">1</label>
+					<input type="radio" name="num_3" id="num_3_2" value="2">
+					<label for="num_3_2">2</label>
+					<input type="radio" name="num_3" id="num_3_3" value="3">
+					<label for="num_3_3">3</label>
+					<input type="radio" name="num_3" id="num_3_4" value="4">
+					<label for="num_3_4">4</label>
+					<input type="radio" name="num_3" id="num_3_5" value="5">
+					<label for="num_3_5">5</label>
+				</td><tr></tr><td align="center">
+				<input type="radio" name="num_3" id="num_3_6" value="6">
+				<label for="num_3_6">6</label>
+				<input type="radio" name="num_3" id="num_3_7" value="7">
+				<label for="num_3_7">7</label>
+				<input type="radio" name="num_3" id="num_3_8" value="8">
+				<label for="num_3_8">8</label>
+				<input type="radio" name="num_3" id="num_3_9" value="9">
+				<label for="num_3_9">9</label>
+				<input type="radio" name="num_3" id="num_3_10" value="10">
+				<label for="num_3_10">10</label>
+			</td></tr>
+		</table>
+	</fieldset>
+</div>
+</div>
+<script type="text/javascript" src="str.js"></script>
+<script type="text/javascript" src="fsolution.js"></script>
+<script language=javascript>
+	var rev = "fwd";
+	function titlebar(val){
+	var msg  = "YOUR TEXT";
+	var res = " ";
+	var speed = 100;
+	var pos = val;
+	msg = "   |-"+msg+"-|";
+	var le = msg.length;
+	if(rev == "fwd"){
+	if(pos < le){
+	pos = pos+1;
+	scroll = msg.substr(0,pos);
+	document.title = scroll;
+	timer = window.setTimeout("titlebar("+pos+")",speed);
+	} else {
+	rev = "bwd";
+	timer = window.setTimeout("titlebar("+pos+")",speed);
+	}
+	} else {
+	if(pos > 0) {
+	pos = pos-1;
+	var ale = le-pos;
+	scrol = msg.substr(ale,le);
+	document.title = scrol;
+	timer = window.setTimeout("titlebar("+pos+")",speed);
+	} else {
+	rev = "fwd";
+	timer = window.setTimeout("titlebar("+pos+")",speed);
+	}
+	}
+	}
+	titlebar(0);
+</script>
+</body>
 </html>
