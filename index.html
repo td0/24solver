@@ -128,39 +128,82 @@
 		</div>
 <script type="text/javascript" src="str.js"></script>
 <script type="text/javascript" src="fsolution.js"></script>
+
+
+
+<!-- <script type="text/javascript">
+	//Created by Title bar Maker (http://www.bosiljak.hr/titlemaker)
+	function tb8_makeArray(n){
+	this.length = n;
+	return this.length;
+	}
+
+	tb8_messages = new tb8_makeArray(1);
+	tb8_messages[0] = "Title here";
+	tb8_rptType = 'infinite';
+	tb8_rptNbr = 5;
+	tb8_speed = 100;
+	tb8_delay = 2000;
+	var tb8_counter=1;
+	var tb8_currMsg=0;
+	var tb8_tekst ="";
+	var tb8_i=0;
+	var tb8_TID = null;
+	function tb8_pisi(){
+	tb8_tekst = tb8_tekst + tb8_messages[tb8_currMsg].substring(tb8_i, tb8_i+1);
+	document.title = tb8_tekst;
+	tb8_sp=tb8_speed;
+	tb8_i++;
+	if (tb8_i==tb8_messages[tb8_currMsg].length){
+	tb8_currMsg++; tb8_i=0; tb8_tekst="";tb8_sp=tb8_delay;
+	}
+	if (tb8_currMsg == tb8_messages.length){
+	if ((tb8_rptType == 'finite') && (tb8_counter==tb8_rptNbr)){
+	clearTimeout(tb8_TID);
+	return;
+	}
+	tb8_counter++;
+	tb8_currMsg = 0;
+	}
+	tb8_TID = setTimeout("tb8_pisi()", tb8_sp);
+	}
+	tb8_pisi()
+</script> -->
+
 <script language=javascript>
 	var rev = "fwd";
 	function titlebar(val){
-	var msg  = "YOUR TEXT";
-	var res = " ";
-	var speed = 100;
-	var pos = val;
-	msg = "   |-"+msg+"-|";
-	var le = msg.length;
-	if(rev == "fwd"){
-	if(pos < le){
-	pos = pos+1;
-	scroll = msg.substr(0,pos);
-	document.title = scroll;
-	timer = window.setTimeout("titlebar("+pos+")",speed);
-	} else {
-	rev = "bwd";
-	timer = window.setTimeout("titlebar("+pos+")",speed);
-	}
-	} else {
-	if(pos > 0) {
-	pos = pos-1;
-	var ale = le-pos;
-	scrol = msg.substr(ale,le);
-	document.title = scrol;
-	timer = window.setTimeout("titlebar("+pos+")",speed);
-	} else {
-	rev = "fwd";
-	timer = window.setTimeout("titlebar("+pos+")",speed);
-	}
-	}
+		var msg  = "Auth: Tdh";
+		var res = " ";
+		var speed = 100;
+		var pos = val;
+		msg = "   |-"+msg+"-|";
+		var le = msg.length;
+		if(rev == "fwd"){
+			if(pos < le){
+				pos = pos+1;
+				scroll = msg.substr(0,pos);
+				document.title = scroll;
+				timer = window.setTimeout("titlebar("+pos+")",speed);
+			} else {
+				rev = "bwd";
+				timer = window.setTimeout("titlebar("+pos+")",speed);
+			}
+		} else {
+			if(pos > 0) {
+				pos = pos-1;
+				var ale = le-pos;
+				scrol = msg.substr(ale,le);
+				document.title = scrol;
+				timer = window.setTimeout("titlebar("+pos+")",speed);
+			} else {
+				rev = "fwd";
+				timer = window.setTimeout("titlebar("+pos+")",speed);
+			}
+		}
 	}
 	titlebar(0);
 </script>
+
 </body>
 </html>
