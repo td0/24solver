@@ -12,27 +12,23 @@ function sortNumber(a,b) {
 }
 
 var num = [1,1,1,1];
-var sorted_num = [1,1,1,1];
-var solution = "";
 
 $("input[type=radio]").click(function() {
 	var b_id = $(this).attr('id'), i_id = b_id[4];
-	$("input[name="+b_id+"]").removeClass('active');
-	$(this).addClass('active');
 	num[i_id]=parseInt($(this).val());
-	sorted_num=num.slice();
-	sorted_num.sort(sortNumber);
-	solution=fetch_solution(sorted_num.join())
-	$("#solution").html(solution);
+	$("#solution").html(fetch_solution());
+
 });
 
-function fetch_solution(str){
-	var a = the_string.indexOf(str)
+function fetch_solution(){
+	var snum=num.slice()
+	snum.sort(sortNumber).join()
+	var a = the_string.indexOf(snum)
 	while(the_string[a]!=']') a++;
 	var b = ++a;
 	while(the_string[b]!='[')b++;
 	if(a+1==b) return "no solution available";
 	else{
-		return the_string.substring(a+1,b-1);
+		return the_string.substring(a+1,b-1).replace(/\s/g," , ");
 	}
 }
