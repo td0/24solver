@@ -8,143 +8,124 @@
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<style>
-			/*#solution {
-				font-size: 0.9em
-			}*/
-			.ui-field-contain .ui-controlgroup,
-			.ui-field-contain fieldset.ui-controlgroup {
-			text-align: center;
-			}
-			.ui-field-contain .ui-controlgroup-controls {
-			width: auto;
-			}
+			.ui-controlgroup-horizontal >
+			.ui-controlgroup-controls >
+			.ui-grid-d>
+			.ui-radio {width: 20%}
 		</style>
 	</head>
 	<body>
-		<div id="content" data-role="page" >
-			
-			<div data-role="header" data-position="fixed">
-				<h4 id="solution">Solution Goes Here!</h4>
-			</div>
-			<!-- 			<div align="center">
-					<span id="solution">press the button to get the solution(s)</span>
-			</div><hr>
-			-->
+		<div data-role="page" >
 			<div role="main" align="center">
-				
-				<fieldset data-role="controlgroup" class="ui-grid-d" data-type="horizontal" data-mini="true">
+				<div data-role="controlgroup" data-type="horizontal" data-mini="true">
 					<legend>Number set 1:</legend>
-					<input class="ui-block-a" type="radio" name="num_0" id="num_0_1" value="1" checked="checked">
-					<label for="num_0_1">1</label>
-					<input class="ui-block-b" type="radio" name="num_0" id="num_0_2" value="2">
-					<label for="num_0_2">2</label>
-					<input class="ui-block-c" type="radio" name="num_0" id="num_0_3" value="3">
-					<label for="num_0_3">3</label>
-					<input class="ui-block-d" type="radio" name="num_0" id="num_0_4" value="4">
-					<label for="num_0_4">4</label>
-					<input class="ui-block-e" type="radio" name="num_0" id="num_0_5" value="5">
-					<label for="num_0_5">5</label>
-					
-					<input class="ui-block-a" type="radio" name="num_0" id="num_0_6" value="6">
-					<label for="num_0_6">6</label>
-					<input class="ui-block-b" type="radio" name="num_0" id="num_0_7" value="7">
-					<label for="num_0_7">7</label>
-					<input class="ui-block-c" type="radio" name="num_0" id="num_0_8" value="8">
-					<label for="num_0_8">8</label>
-					<input class="ui-block-d" type="radio" name="num_0" id="num_0_9" value="9">
-					<label for="num_0_9">9</label>
-					<input class="ui-block-e" type="radio" name="num_0" id="num_0_10" value="10">
-					<label for="num_0_10">10</label>
-				</fieldset>
-
-				<fieldset data-role="controlgroup"  data-type="horizontal" data-mini="true">
-					<table>
-						<tr><td align="center">
-							<legend>Number set 2:</legend>
-							<input type="radio" name="num_1" id="num_1_1" value="1" checked="checked">
-							<label for="num_1_1">1</label>
-							<input type="radio" name="num_1" id="num_1_2" value="2">
-							<label for="num_1_2">2</label>
-							<input type="radio" name="num_1" id="num_1_3" value="3">
-							<label for="num_1_3">3</label>
-							<input type="radio" name="num_1" id="num_1_4" value="4">
-							<label for="num_1_4">4</label>
-							<input type="radio" name="num_1" id="num_1_5" value="5">
-							<label for="num_1_5">5</label>
-						</td><tr></tr><td align="center">
-						<input type="radio" name="num_1" id="num_1_6" value="6">
+					<div class="ui-grid-d">
+						<input class="ui-block-a" type="radio" name="num_0" id="num_0_1" value="1" checked="checked">
+						<label for="num_0_1">1</label>
+						<input class="ui-block-b" type="radio" name="num_0" id="num_0_2" value="2">
+						<label for="num_0_2">2</label>
+						<input class="ui-block-c" type="radio" name="num_0" id="num_0_3" value="3">
+						<label for="num_0_3">3</label>
+						<input class="ui-block-d" type="radio" name="num_0" id="num_0_4" value="4">
+						<label for="num_0_4">4</label>
+						<input class="ui-block-e" type="radio" name="num_0" id="num_0_5" value="5">
+						<label for="num_0_5">5</label>
+					</div><div class="ui-grid-d">
+						<input class="ui-block-a" type="radio" name="num_0" id="num_0_6" value="6">
+						<label for="num_0_6">6</label>
+						<input class="ui-block-b" type="radio" name="num_0" id="num_0_7" value="7">
+						<label for="num_0_7">7</label>
+						<input class="ui-block-c" type="radio" name="num_0" id="num_0_8" value="8">
+						<label for="num_0_8">8</label>
+						<input class="ui-block-d" type="radio" name="num_0" id="num_0_9" value="9">
+						<label for="num_0_9">9</label>
+						<input class="ui-block-e" type="radio" name="num_0" id="num_0_10" value="10">
+						<label for="num_0_10">10</label>
+					</div>
+				</div>
+				<div data-role="controlgroup"  data-type="horizontal" data-mini="true">
+					<legend>Number set 2:</legend>
+					<div class="ui-grid-d">
+						<input type="radio" name="num_1" class="ui-block-a" id="num_1_1" value="1" checked="checked">
+						<label for="num_1_1">1</label>
+						<input type="radio" name="num_1" class="ui-block-b" id="num_1_2" value="2">
+						<label for="num_1_2">2</label>
+						<input type="radio" name="num_1" class="ui-block-c" id="num_1_3" value="3">
+						<label for="num_1_3">3</label>
+						<input type="radio" name="num_1" class="ui-block-d" id="num_1_4" value="4">
+						<label for="num_1_4">4</label>
+						<input type="radio" name="num_1" class="ui-block-e" id="num_1_5" value="5">
+						<label for="num_1_5">5</label>
+					</div><div class="ui-grid-d">
+						<input type="radio" name="num_1" class="ui-block-a" id="num_1_6" value="6">
 						<label for="num_1_6">6</label>
-						<input type="radio" name="num_1" id="num_1_7" value="7">
+						<input type="radio" name="num_1" class="ui-block-b" id="num_1_7" value="7">
 						<label for="num_1_7">7</label>
-						<input type="radio" name="num_1" id="num_1_8" value="8">
+						<input type="radio" name="num_1" class="ui-block-c" id="num_1_8" value="8">
 						<label for="num_1_8">8</label>
-						<input type="radio" name="num_1" id="num_1_9" value="9">
+						<input type="radio" name="num_1" class="ui-block-d" id="num_1_9" value="9">
 						<label for="num_1_9">9</label>
-						<input type="radio" name="num_1" id="num_1_10" value="10">
+						<input type="radio" name="num_1" class="ui-block-e" id="num_1_10" value="10">
 						<label for="num_1_10">10</label>
-					</td></tr>
-				</table>
-			</fieldset>
-
-			<fieldset data-role="controlgroup"  data-type="horizontal" data-mini="true">
-				<table>
-					<tr><td align="center">
-						<legend>Number set 3:</legend>
-						<input type="radio" name="num_2" id="num_2_1" value="1" checked="checked">
+					</div>
+				</div>
+				<div data-role="controlgroup"  data-type="horizontal" data-mini="true">
+					<legend>Number set 3:</legend>
+					<div class="ui-grid-d">
+						<input type="radio" name="num_2" class="ui-block-a" id="num_2_1" value="1" checked="checked">
 						<label for="num_2_1">1</label>
-						<input type="radio" name="num_2" id="num_2_2" value="2">
+						<input type="radio" name="num_2" class="ui-block-b" id="num_2_2" value="2">
 						<label for="num_2_2">2</label>
-						<input type="radio" name="num_2" id="num_2_3" value="3">
+						<input type="radio" name="num_2" class="ui-block-c" id="num_2_3" value="3">
 						<label for="num_2_3">3</label>
-						<input type="radio" name="num_2" id="num_2_4" value="4">
+						<input type="radio" name="num_2" class="ui-block-d" id="num_2_4" value="4">
 						<label for="num_2_4">4</label>
-						<input type="radio" name="num_2" id="num_2_5" value="5">
+						<input type="radio" name="num_2" class="ui-block-e" id="num_2_5" value="5">
 						<label for="num_2_5">5</label>
-						</td><tr></tr><td align="center">
-						<input type="radio" name="num_2" id="num_2_6" value="6">
+					</div><div class="ui-grid-d">
+						<input type="radio" name="num_2" class="ui-block-a" id="num_2_6" value="6">
 						<label for="num_2_6">6</label>
-						<input type="radio" name="num_2" id="num_2_7" value="7">
+						<input type="radio" name="num_2" class="ui-block-b" id="num_2_7" value="7">
 						<label for="num_2_7">7</label>
-						<input type="radio" name="num_2" id="num_2_8" value="8">
+						<input type="radio" name="num_2" class="ui-block-c" id="num_2_8" value="8">
 						<label for="num_2_8">8</label>
-						<input type="radio" name="num_2" id="num_2_9" value="9">
+						<input type="radio" name="num_2" class="ui-block-d" id="num_2_9" value="9">
 						<label for="num_2_9">9</label>
-						<input type="radio" name="num_2" id="num_2_10" value="10">
+						<input type="radio" name="num_2" class="ui-block-e" id="num_2_10" value="10">
 						<label for="num_2_10">10</label>
-					</td></tr>
-				</table>
-			</fieldset>
-		
-		<fieldset data-role="controlgroup"  data-type="horizontal" data-mini="true">
-			<table>
-				<tr><td align="center">
+					</div>
+				</div>
+				<div data-role="controlgroup"  data-type="horizontal" data-mini="true">
 					<legend>Number set 4:</legend>
-					<input type="radio" name="num_3" id="num_3_1" value="1" checked="checked">
-					<label for="num_3_1">1</label>
-					<input type="radio" name="num_3" id="num_3_2" value="2">
-					<label for="num_3_2">2</label>
-					<input type="radio" name="num_3" id="num_3_3" value="3">
-					<label for="num_3_3">3</label>
-					<input type="radio" name="num_3" id="num_3_4" value="4">
-					<label for="num_3_4">4</label>
-					<input type="radio" name="num_3" id="num_3_5" value="5">
-					<label for="num_3_5">5</label>
-				</td><tr></tr><td align="center">
-				<input type="radio" name="num_3" id="num_3_6" value="6">
-				<label for="num_3_6">6</label>
-				<input type="radio" name="num_3" id="num_3_7" value="7">
-				<label for="num_3_7">7</label>
-				<input type="radio" name="num_3" id="num_3_8" value="8">
-				<label for="num_3_8">8</label>
-				<input type="radio" name="num_3" id="num_3_9" value="9">
-				<label for="num_3_9">9</label>
-				<input type="radio" name="num_3" id="num_3_10" value="10">
-				<label for="num_3_10">10</label>
-			</td></tr>
-		</table>
-	</fieldset>
-</div>
-</div>
+					<div class="ui-grid-d">
+						<input type="radio" name="num_3" class="ui-block-a" id="num_3_1" value="1" checked="checked">
+						<label for="num_3_1">1</label>
+						<input type="radio" name="num_3" class="ui-block-b" id="num_3_2" value="2">
+						<label for="num_3_2">2</label>
+						<input type="radio" name="num_3" class="ui-block-c" id="num_3_3" value="3">
+						<label for="num_3_3">3</label>
+						<input type="radio" name="num_3" class="ui-block-d" id="num_3_4" value="4">
+						<label for="num_3_4">4</label>
+						<input type="radio" name="num_3" class="ui-block-e" id="num_3_5" value="5">
+						<label for="num_3_5">5</label>
+					</div><div class="ui-grid-d">
+						<input type="radio" name="num_3" class="ui-block-a" id="num_3_6" value="6">
+						<label for="num_3_6">6</label>
+						<input type="radio" name="num_3" class="ui-block-b" id="num_3_7" value="7">
+						<label for="num_3_7">7</label>
+						<input type="radio" name="num_3" class="ui-block-c" id="num_3_8" value="8">
+						<label for="num_3_8">8</label>
+						<input type="radio" name="num_3" class="ui-block-d" id="num_3_9" value="9">
+						<label for="num_3_9">9</label>
+						<input type="radio" name="num_3" class="ui-block-e" id="num_3_10" value="10">
+						<label for="num_3_10">10</label>
+					</div>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed" align="center">
+				<span id="solution" align="center">Solution Goes Here!</span>
+			</div>
+		</div>
 <script type="text/javascript" src="str.js"></script>
 <script type="text/javascript" src="fsolution.js"></script>
 <script language=javascript>
